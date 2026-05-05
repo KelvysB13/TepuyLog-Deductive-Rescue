@@ -6,9 +6,6 @@
 *.py linguist-language=Python
 *.py linguist-detectable=true
 
-# pyDatalog (archivo específico con reglas deductivas)
-src/engine.py linguist-language=pyDatalog
-
 # SQL
 *.sql linguist-language=SQL
 *.sql linguist-detectable=true
