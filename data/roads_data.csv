@@ -1,0 +1,10 @@
+origen,destino,distancia_km,tipo_sendero
+BASE,KAVAK,12.5,vehicular
+BASE,MISION,8.2,vehicular
+KAVAK,PARAITEPUY,7.8,peatonal
+KAVAK,RAPIDOS,6.3,peatonal
+PARAITEPUY,RAPIDOS,4.1,peatonal
+MISION,ARUY,5.5,peatonal
+ARUY,PARAITEPUY,9.0,peatonal
+MISION,RAPIDOS,11.2,vehicular
+RAPIDOS,PARAITEPUY,3.7,peatonal

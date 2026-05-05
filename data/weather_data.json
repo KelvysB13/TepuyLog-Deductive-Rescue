@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-05-05T14:30:00Z",
+  "alertas": {
+    "nivel_hidrologico": "ROJO",
+    "rutas_cerradas_por_crecida": ["PARAITEPUY-RAPIDOS", "KAVAK-RAPIDOS"]
+  },
+  "campamentos": {
+    "BASE": {"lluvia_mm": 12, "rio_crecido": false},
+    "PARAITEPUY": {"lluvia_mm": 85, "rio_crecido": true},
+    "KAVAK": {"lluvia_mm": 42, "rio_crecido": true},
+    "RAPIDOS": {"lluvia_mm": 63, "rio_crecido": true},
+    "MISION": {"lluvia_mm": 28, "rio_crecido": false},
+    "ARUY": {"lluvia_mm": 37, "rio_crecido": false}
+  }
+}
