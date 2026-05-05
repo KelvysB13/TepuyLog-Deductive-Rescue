@@ -1,0 +1,38 @@
+# ============================================
+# OPERACIÓN TEPUY-LOG - LENGUAJES
+# ============================================
+
+# Python
+*.py linguist-language=Python
+
+# pyDatalog (marcar archivos específicos que usan pyDatalog)
+src/engine.py linguist-language=pyDatalog
+src/loaders/*.py linguist-language=Python  # Estos son Python puro
+src/main.py linguist-language=Python
+
+# SQL
+*.sql linguist-language=SQL
+
+# JSON
+*.json linguist-language=JSON
+
+# CSV
+*.csv linguist-language=CSV
+
+# ============================================
+# OVERSAMPLING - CORREGIR CONTADORES
+# ============================================
+
+# Los archivos pequeños deben contar igual
+*.py linguist-vendored=false
+*.sql linguist-vendored=false
+*.json linguist-vendored=false
+*.csv linguist-vendored=false
+
+# Marcar documentación
+*.md linguist-documentation=true
+README.md linguist-documentation=true
+
+# Excluir videos
+*.mp4 linguist-generated=true
+*.mov linguist-generated=true

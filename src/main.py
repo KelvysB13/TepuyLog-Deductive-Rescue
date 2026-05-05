@@ -3,8 +3,9 @@ import os
 from engine import verificar_acceso, obtener_ruta_completa
 from loaders import *
 
+# ----- Imprime el Banner de la Musión -----
 def print_banner():
-    """Imprime el banner de la misión"""
+
     print("=" * 60)
     print("🚁 OPERACIÓN TEPUY-LOG | SISTEMA DEDUCTIVO DE RESCATE")
     print("=" * 60)
@@ -12,7 +13,7 @@ def print_banner():
     print("⏰ Tiempo límite: 72 horas")
     print("=" * 60)
 
-
+# ----- Dibuja las "conexiones" mediante un grafo -----
 def print_grafo_conexiones():
 
     print("\n🗺️ GRAFO DE CONEXIONES (Campamentos):")
@@ -62,6 +63,7 @@ def main():
 #---------------------------------------------------
 
     print("\n[2] CONSULTANDO BASE DE DATOS DE PERSONAL...")
+
     atrapados = load_personal_info()
     
     if not atrapados:
@@ -75,7 +77,6 @@ def main():
 #------------------------------------
 
     print("\n[3] EVALUANDO RUTAS DE RESCATE CON LÓGICA DEDUCTIVA...")
-    print("    🔍 Regla recursiva: acceso(X,Z) ← conexion(X,Y) ∧ ¬inundado(X,Y) ∧ acceso(Y,Z)")
     
     origen_base = "BASE"
     rutas_exitosas = 0
@@ -96,22 +97,28 @@ def main():
         hay_acceso = verificar_acceso(origen_base, destino)
         
         if hay_acceso:
-            # Obtener ruta completa
+
             ruta = obtener_ruta_completa(origen_base, destino)
             
             if ruta:
                 ruta_str = " → ".join(ruta)
+
                 print(f"   🗺️ Ruta de extracción: {ruta_str}")
                 print(f"   ✅ VEREDICTO: RESCATE POSIBLE")
+
                 registrar_bitacora(ruta_str, origen_base, destino)
                 rutas_exitosas += 1
+
             else:
                 print(f"   ✅ VEREDICTO: RESCATE POSIBLE (ruta existente)")
+
                 registrar_bitacora("Ruta segura existente", origen_base, destino)
                 rutas_exitosas += 1
+
         else:
             print(f"   🚫 RUTAS BLOQUEADAS")
             print(f"   ❌ VEREDICTO: RESCATE IMPOSIBLE VÍA TERRESTRE")
+
             registrar_bitacora("SIN RUTA SEGURA - EVALUAR RESCATE AÉREO", origen_base, destino)
     
 #----------------------------
@@ -121,7 +128,7 @@ def main():
     print("\n" + "=" * 60)
     print("📊 INFORME FINAL DE LA MISIÓN")
     print("=" * 60)
-    
+
     print(f"   👥 Total de personas atrapadas: {len(atrapados)}")
     print(f"   ✅ Rescates posibles por tierra: {rutas_exitosas}")
     print(f"   ❌ Rescates que requieren helicóptero: {len(atrapados) - rutas_exitosas}")
