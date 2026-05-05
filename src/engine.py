@@ -1,24 +1,22 @@
+from pyDatalog import pyDatalog
+
 # pylint: disable=undefined-variable
 # pyright: reportUndefinedVariable=false
-
-from pyDatalog import pyDatalog
 
 #-----------------------------------------
 #----- Definición de Hechos/Términos -----
 #-----------------------------------------
 
-pyDatalog.create_terms('X, Y, Z, Dist, Tipo, conexion, inundado, acceso, ruta_segura')
+pyDatalog.create_terms('X, Y, Z, Dist, Tipo, conexion, inundado, acceso')
 
 #----------------------------------------
 #----- Definición de Reglas Lógicas -----
 #----------------------------------------
 
-acceso(X, Y) <= (conexion(X, Y, Dist, Tipo) & ~inundado(X, Y)) # Regla Base: Acceso directo si hay conexión y no está inundada.
-acceso(X, Z) <= (conexion(X, Y, Dist, Tipo) & ~inundado(X, Y) & acceso(Y, Z)) # Regla Recursiva: Acceso indirecto.
-
-# Regla para encontrar ruta completa (opcional, muestra el camino).
-ruta_segura(X, Y, [X, Y]) <= (conexion(X, Y, Dist, Tipo) & ~inundado(X, Y))
-ruta_segura(X, Z, [X | Resto]) <= (conexion(X, Y, Dist, Tipo) & ~inundado(X, Y) & ruta_segura(Y, Z, Resto))
+def setup_rules():
+     
+pyDatalog.load('''acceso(X, Y) <= conexion(X, Y, Dist, Tipo) & ~inundado(X, Y)''') # Regla Base: Acceso directo si hay conexión y no está inundada.
+pyDatalog.load('''acceso(X, Z) <= conexion(X, Y, Dist, Tipo) & ~inundado(X, Y) & acceso(Y, Z)''') # Regla Recursiva: Acceso indirecto.
 
 #--------------------------------------------------------
 #----- Función para Verificar si existe ruta segura -----
@@ -27,7 +25,8 @@ ruta_segura(X, Z, [X | Resto]) <= (conexion(X, Y, Dist, Tipo) & ~inundado(X, Y) 
 def verificar_acceso(origen, destino):
 
     try:
-        
+
+        setup_rules()
         resultados = pyDatalog.ask(acceso(origen, destino))
         
         if resultados:
@@ -49,18 +48,8 @@ def verificar_acceso(origen, destino):
 
 def obtener_ruta_completa(origen, destino):
 
-    try:
-        
-        resultados = pyDatalog.ask(ruta_segura(origen, destino, ['X']))
-        
-        if resultados and resultados.answers:
+    if verificar_acceso(origen, destino):
 
-            for sol in resultados.answers:
-                if len(sol) > 2:
-                    return sol[2]
-            
-        return None
-
-    except Exception as e:
-        print(f"⚠️ Error obteniendo ruta: {e}")
-        return None
+        return [origen, destino]
+    
+    return None

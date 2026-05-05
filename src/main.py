@@ -1,7 +1,7 @@
 import os
 
 from engine import verificar_acceso, obtener_ruta_completa
-from loaders import *
+from loaders import load_roads_from_csv, load_weather_from_json, load_personal_info, registrar_bitacora
 
 # ----- Imprime el Banner de la Musión -----
 def print_banner():
@@ -47,11 +47,11 @@ def main():
     base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
     # Cargar rutas desde CSV.
-    csv_path = os.path.join(base_path, "data", "roads.csv")
+    csv_path = os.path.join(base_path, "data", "roads_data.csv")
     load_roads_from_csv(csv_path)
     
     # Cargar clima desde JSON.
-    json_path = os.path.join(base_path, "data", "weather.json")
+    json_path = os.path.join(base_path, "data", "weather_data.json")
     timestamp = load_weather_from_json(json_path)
     print(f"    📅 Clima registrado: {timestamp}")
     

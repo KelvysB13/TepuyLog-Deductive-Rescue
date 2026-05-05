@@ -2,13 +2,9 @@
 #----- Importar Funciones Principales -----
 #------------------------------------------
 
-from src.loaders.csv_loader import load_roads_from_csv
-from src.loaders.json_loader import load_weather_from_json
-from src.loaders.db_loader import (
-    load_personal_info,
-    registrar_bitacora,
-    get_suministros_en_campamento
-)
+from .csv_loader import load_roads_from_csv
+from .json_loader import load_weather_from_json
+from .db_loader import load_personal_info, registrar_bitacora
 
 #------------------------------------
 #----- Control de Importaciones -----

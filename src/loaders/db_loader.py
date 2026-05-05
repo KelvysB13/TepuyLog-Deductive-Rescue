@@ -1,6 +1,4 @@
 import psycopg2
-from psycopg2.extras import RealDictCursor
-
 
 #-----------------------------------------
 #----- Conexión con la base de datos -----
@@ -24,7 +22,7 @@ def get_db_connection():
 def load_personal_info():
 
     conn = get_db_connection()
-    cur = conn.cursor(cursor_factory=RealDictCursor)
+    cur = conn.cursor()
     
     cur.execute("""
         SELECT nombre, rol, campamento_actual, edad, estado
@@ -40,7 +38,7 @@ def load_personal_info():
 
     for p in atrapados:
         
-        print(f"  - {p['nombre']} ({p['rol']}) en {p['campamento_actual']}")
+        print(f"  - {p[0]} ({p[1]}) en {p[2]}")
     
     return atrapados
 
@@ -57,7 +55,9 @@ def registrar_bitacora(ruta_encontrada, origen, destino):
         INSERT INTO bitacora_rescate (evento, responsable, ruta_evaluada)
         VALUES (%s, %s, %s)
     """, (
-        f"Evaluación de ruta {origen} -> {destino}", ruta_encontrada
+        f"Evaluación de ruta {origen} -> {destino}",
+        "Sistema Deductivo Tepuy-Log",
+        ruta_encontrada
     ))
 
     conn.commit()
