@@ -37,6 +37,26 @@ Una expedición científica quedó aislada en la **Gran Sabana** debido a fuerte
 
 ---
 
+## 🚀 Instalación y Uso
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/TepuyLog-Deductive-Rescue.git](https://github.com/tu-usuario/TepuyLog-Deductive-Rescue.git)
+   cd TepuyLog-Deductive-Rescue
+   ```
+
+2. **Instalar dependencias:**
+    ```text
+    pip install -r requirements.txt
+    ```
+
+3. **Ejecutar la misión:**
+    ```text
+    python src/main.py
+    ```
+
+---
+
 ## 🗂️ Estructura del Proyecto
 
 ```text
