@@ -49,6 +49,9 @@ TepuyLog-Deductive-Rescue/
 ├── 📁 docs/ # Documentación adicional
 │ ├── Planteamiento del Problema.pdf
 │
+├── 📁 sql/ # Esquemas de base de datos
+│ └── 📄 schema.sql # Tablas y datos iniciales
+│
 ├── 📁 src/ # Código fuente
 │ ├── init.py # Paquete principal
 │ ├── engine.py # Reglas deductivas (pyDatalog)
@@ -57,14 +60,7 @@ TepuyLog-Deductive-Rescue/
 │    ├── init.py
 │    ├── csv_loader.py # Lector CSV
 │    ├── json_loader.py # Lector JSON
-│    └── db_loader.py # Conexión PostgreSQL
-│
-├── 📁 sql/ # Esquemas de base de datos
-│ └── 📄 schema.sql # Tablas y datos iniciales
-│
-├── 📁 .git/ # Configuración de Git
-│ ├── 📄 .gitattributes # Estadísticas de lenguaje
-│ └── 📄 .gitignore # Archivos ignorados
+│    └── db_loader.py # Conexión a PostgreSQL
 │
 ├── 📄 LICENSE # Licencia MIT
 ├── 📄 README.md
