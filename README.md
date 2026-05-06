@@ -29,7 +29,9 @@ Una expedición científica quedó aislada en la **Gran Sabana** debido a fuerte
 
 ## 🏗️ Arquitectura del Sistema
 
+![Descripción del GIF](https://ejemplo.com/imagen.gif)
 
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=682154674784982645" height="700" width="600" frameborder="0" scrolling="no" ></iframe>
 ---
 
 ## 🗂️ Estructura del Proyecto
