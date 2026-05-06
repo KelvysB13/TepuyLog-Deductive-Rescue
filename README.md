@@ -7,8 +7,16 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
 ![Status](https://img.shields.io/badge/Status-Operacional-brightgreen)
 
+<span style="
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+">
+
 **Sistema de planificación de rutas de rescate basado en lógica deductiva**
 
+</span>
 </div>
 
 ---
