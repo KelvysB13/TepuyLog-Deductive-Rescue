@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![Python](https://img.shields.io/badge/Python-3.14.4-blue?logo=python)
 ![pyDatalog](https://img.shields.io/badge/pyDatalog-0.17.4-green)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?logo=postgresql)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
 ![Status](https://img.shields.io/badge/Status-Operacional-brightgreen)
 
 **Sistema de planificación de rutas de rescate basado en lógica deductiva**
@@ -29,3 +29,36 @@ Una expedición científica quedó aislada en la **Gran Sabana** debido a fuerte
 
 ## 🏗️ Arquitectura del Sistema
 
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```text
+TepuyLog-Deductive-Rescue/
+│
+├── 📁 data/ # Datos de entrada
+│ ├── 📄 roads_data.csv # Conexiones topográficas
+│ └── 📄 weather_data.json # Estado climático y rutas bloqueadas
+│
+├── 📁 src/ # Código fuente
+│ ├── init.py # Paquete principal
+│ ├── engine.py # Reglas deductivas (pyDatalog)
+│ ├── main.py # Orquestador principal
+│ └── 📁 loaders/ # Módulo de carga de datos
+│    ├── init.py
+│    ├── csv_loader.py # Lector CSV
+│    ├── json_loader.py # Lector JSON
+│    └── db_loader.py # Conexión PostgreSQL
+│
+├── 📁 sql/ # Esquemas de base de datos
+│ └── 📄 schema.sql # Tablas y datos iniciales
+│
+├── 📁 docs/ # Documentación adicional
+│
+├── 📄 requirements.txt # Dependencias
+├── .gitattributes # Estadísticas de lenguaje
+├── .gitignore # Archivos ignorados
+├── LICENSE # Licencia MIT
+└── README.md # Este archivo
+```
