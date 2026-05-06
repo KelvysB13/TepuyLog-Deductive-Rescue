@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Diagrama del grafo](./docs/images/TepuyLog-Banner.png)
+![Banner](./docs/images/TepuyLog-Banner.png)
 
 <a href="https://www.python.org/downloads/release/python-3144/">
     <img src="https://img.shields.io/badge/Python-3.14.4-blue?logo=python" alt="Python 3.14.4">

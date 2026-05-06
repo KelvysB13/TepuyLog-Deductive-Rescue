@@ -1,0 +1,66 @@
+# ============================================
+# OPERACIÓN TEPUY-LOG - LENGUAJES DEL PROYECTO
+# ============================================
+
+# Python
+*.py linguist-language=Python
+*.py linguist-detectable=true
+
+# SQL
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
+
+# JSON
+*.json linguist-language=JSON
+*.json linguist-detectable=true
+
+# CSV
+*.csv linguist-language=CSV
+*.csv linguist-detectable=true
+
+# ============================================
+# EXCLUIR ARCHIVOS QUE NO SON CÓDIGO
+# ============================================
+
+# Videos e imágenes
+*.mp4 linguist-generated=true
+*.mov linguist-generated=true
+*.png linguist-generated=true
+*.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+
+# Archivos de edición de video
+*.capx linguist-generated=true
+*.caplinguist-generated=true
+
+# Documentación
+*.md linguist-documentation=true
+README.md linguist-documentation=true
+LICENSE linguist-documentation=true
+
+# Archivos de configuración del editor
+.vscode/* linguist-vendored=true
+.idea/* linguist-vendored=true
+*.code-workspace linguist-vendored=true
+
+# ============================================
+# FORZAR CONTEO DE ARCHIVOS PEQUEÑOS
+# ============================================
+
+# Asegurar que todos los archivos de código sean contados
+*.py linguist-vendored=false
+*.sql linguist-vendored=false
+*.json linguist-vendored=false
+*.csv linguist-vendored=false
+
+# ============================================
+# OVERSAMPLING PARA CORREGIR PORCENTAJES
+# ============================================
+
+# Los archivos de datos y lógica deben tener peso normal
+data/*.csv linguist-language=CSV
+data/*.json linguist-language=JSON
+src/engine.py linguist-language=pyDatalog
+src/main.py linguist-language=Python
+src/loaders/*.py linguist-language=Python
+sql/*.sql linguist-language=SQL
