@@ -2,8 +2,8 @@
 .vscode/
 
 # Git
-.gitattributes
-.gitignore
+*.gitattributes
+*.gitignore
 
 # Python
 __pycache__/
