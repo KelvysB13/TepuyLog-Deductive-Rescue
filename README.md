@@ -15,6 +15,7 @@
     <img src="https://img.shields.io/badge/Status-Operacional-brightgreen" alt="Estado: Operacional">
 </a>
 
+
 **Sistema de Planificación de Rutas de Rescate Basado en Lógica Deductiva**
 
 </div>
