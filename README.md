@@ -48,6 +48,8 @@ TepuyLog-Deductive-Rescue/
 │
 ├── 📁 docs/ # Documentación adicional
 │ ├── Planteamiento del Problema.pdf
+│ └── 📁 images/ # Imagenes
+│    └── 📸 TepuyLog-Banner.png
 │
 ├── 📁 sql/ # Esquemas de base de datos
 │ └── 📄 schema.sql # Tablas y datos iniciales
