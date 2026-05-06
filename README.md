@@ -39,18 +39,18 @@ Una expedición científica quedó aislada en la **Gran Sabana** debido a fuerte
 
 ## 🚀 Instalación y Uso
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/tu-usuario/TepuyLog-Deductive-Rescue.git](https://github.com/tu-usuario/TepuyLog-Deductive-Rescue.git)
-   cd TepuyLog-Deductive-Rescue
-   ```
+1. **Clonar el Repositorio:**
+    ```text
+    git clone https://github.com/KelvysB13/TepuyLog-Deductive-Rescue.git
+    cd TepuyLog-Deductive-Rescue
+    ```
 
-2. **Instalar dependencias:**
+2. **Instalar Dependencias:**
     ```text
     pip install -r requirements.txt
     ```
 
-3. **Ejecutar la misión:**
+3. **Ejecutar la Misión:**
     ```text
     python src/main.py
     ```
