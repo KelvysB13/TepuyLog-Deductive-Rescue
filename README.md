@@ -2,32 +2,28 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.14.4-blue?logo=python)
-![pyDatalog](https://img.shields.io/badge/pyDatalog-0.17.4-green)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
-![Status](https://img.shields.io/badge/Status-Operacional-brightgreen)
+<a href="https://www.python.org/downloads/release/python-3144/">
+    <img src="https://img.shields.io/badge/Python-3.14.4-blue?logo=python" alt="Python 3.14.4">
+</a>
+<a href="https://pypi.org/project/pyDatalog/">
+    <img src="https://img.shields.io/badge/pyDatalog-0.17.4-green" alt="pyDatalog 0.17.4">
+</a>
+<a href="https://www.postgresql.org/docs/17/index.html">
+    <img src="https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql" alt="PostgreSQL 17">
+</a>
+<a href="#">
+    <img src="https://img.shields.io/badge/Status-Operacional-brightgreen" alt="Estado: Operacional">
+</a>
 
-<span style="color:red">A</span><span style="color:orange">r</span><span style="color:gold">c</span><span style="color:green">o</span><span style="color:blue">í</span><span style="color:indigo">r</span><span style="color:violet">i</span><span style="color:red">s</span>
+**Sistema de Planificación de Rutas de Rescate Basado en Lógica Deductiva**
 
-<span style="
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-">
-
-**Sistema de planificación de rutas de rescate basado en lógica deductiva**
-
-</span>
 </div>
-
-<span style="color:red">A</span><span style="color:orange">r</span><span style="color:gold">c</span><span style="color:green">o</span><span style="color:blue">í</span><span style="color:indigo">r</span><span style="color:violet">i</span><span style="color:red">s</span>
 
 ---
 
 ## 📖 Descripción
 
-**Operación Tepuy-Log** es un sistema de apoyo logístico para misiones de rescate en zonas de difícil acceso. Utiliza **programación lógica deductiva (pyDatalog) básica** para modelar el terreno y determinar rutas seguras de evacuación, combinando datos topográficos estáticos con información meteorológica en tiempo real.
+**Tepuy-Log Deductive Rescue** es un sistema de apoyo logístico para misiones de rescate en zonas de difícil acceso en la Gran Sabana. Utiliza **programación lógica deductiva básica, utilizando reglas y hechos manejados en pyDatalog** para modelar el terreno y determinar rutas seguras de evacuación, combinando datos topográficos estáticos con información meteorológica en tiempo real.
 
 ### 📜 Contexto de la Misión
 
@@ -36,17 +32,6 @@ Una expedición científica quedó aislada en la **Gran Sabana** debido a fuerte
 1. **Mapear conexiones** entre campamentos (hechos).
 2. **Evaluar rutas seguras** usando reglas recursivas.
 3. **Determinar viabilidad** del rescate terrestre.
-
----
-
-## 🏗️ Arquitectura del Sistema
-
-<div align="center">
-
-![Descripción del GIF](https://media.indiedb.com/images/articles/1/104/103714/auto/chopps1.gif)
-![Descripción del GIF](https://i.pinimg.com/originals/f8/bc/d1/f8bcd19490aec0382e4fdf7782a3e851.gif)
-
-</div>
 
 ---
 
@@ -60,6 +45,7 @@ TepuyLog-Deductive-Rescue/
 │ └── 📄 weather_data.json # Estado climático y rutas bloqueadas
 │
 ├── 📁 docs/ # Documentación adicional
+│ ├── Planteamiento del Problema.pdf
 │
 ├── 📁 src/ # Código fuente
 │ ├── init.py # Paquete principal
