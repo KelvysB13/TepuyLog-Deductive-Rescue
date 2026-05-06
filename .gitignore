@@ -1,6 +1,10 @@
 # VS Code
 .vscode/
 
+# Git
+.gitattributes
+.gitignore
+
 # Python
 __pycache__/
 *.pyc

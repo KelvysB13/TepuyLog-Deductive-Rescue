@@ -15,15 +15,15 @@
 
 ## 📖 Descripción
 
-**Operación Tepuy-Log** es un sistema de apoyo logístico para misiones de rescate en zonas de difícil acceso. Utiliza **programación lógica deductiva (pyDatalog)** para modelar el terreno y determinar rutas seguras de evacuación, combinando datos topográficos estáticos con información meteorológica en tiempo real.
+**Operación Tepuy-Log** es un sistema de apoyo logístico para misiones de rescate en zonas de difícil acceso. Utiliza **programación lógica deductiva (pyDatalog) básica** para modelar el terreno y determinar rutas seguras de evacuación, combinando datos topográficos estáticos con información meteorológica en tiempo real.
 
-### Contexto de la Misión
+### 📜 Contexto de la Misión
 
 Una expedición científica quedó aislada en la **Gran Sabana** debido a fuertes precipitaciones que bloquearon las rutas tradicionales. El sistema debe:
 
-1. **Mapear conexiones** entre campamentos (hechos)
-2. **Evaluar rutas seguras** usando reglas recursivas
-3. **Determinar viabilidad** del rescate terrestre
+1. **Mapear conexiones** entre campamentos (hechos).
+2. **Evaluar rutas seguras** usando reglas recursivas.
+3. **Determinar viabilidad** del rescate terrestre.
 
 ---
 
@@ -41,6 +41,8 @@ TepuyLog-Deductive-Rescue/
 │ ├── 📄 roads_data.csv # Conexiones topográficas
 │ └── 📄 weather_data.json # Estado climático y rutas bloqueadas
 │
+├── 📁 docs/ # Documentación adicional
+│
 ├── 📁 src/ # Código fuente
 │ ├── init.py # Paquete principal
 │ ├── engine.py # Reglas deductivas (pyDatalog)
@@ -54,11 +56,11 @@ TepuyLog-Deductive-Rescue/
 ├── 📁 sql/ # Esquemas de base de datos
 │ └── 📄 schema.sql # Tablas y datos iniciales
 │
-├── 📁 docs/ # Documentación adicional
+├── 📁 .git/ # Configuración de Git
+│ ├── 📄 .gitattributes # Estadísticas de lenguaje
+│ └── 📄 .gitignore # Archivos ignorados
 │
-├── 📄 requirements.txt # Dependencias
-├── .gitattributes # Estadísticas de lenguaje
-├── .gitignore # Archivos ignorados
-├── LICENSE # Licencia MIT
-└── README.md # Este archivo
+├── 📄 LICENSE # Licencia MIT
+├── 📄 README.md
+└── 📄 requirements.txt # Dependencias Necesarias
 ```
