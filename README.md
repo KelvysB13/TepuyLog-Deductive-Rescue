@@ -21,6 +21,8 @@
 </span>
 </div>
 
+<span style="color:red">A</span><span style="color:orange">r</span><span style="color:gold">c</span><span style="color:green">o</span><span style="color:blue">í</span><span style="color:indigo">r</span><span style="color:violet">i</span><span style="color:red">s</span>
+
 ---
 
 ## 📖 Descripción
