@@ -18,4 +18,4 @@ __all__ = [
     'get_suministros_en_campamento'
 ]
 
-print("[loaders] - Módulo de carga de datos listo para operación")
+#print("[loaders] - Módulo de carga de datos listo para operación")

@@ -68,6 +68,7 @@ TepuyLog-Deductive-Rescue/
 │
 ├── 📁 docs/ # Documentación adicional
 │ ├── Planteamiento del Problema.pdf
+│ │
 │ └── 📁 images/ # Imagenes
 │    └── 📸 TepuyLog-Banner.png
 │
@@ -78,6 +79,7 @@ TepuyLog-Deductive-Rescue/
 │ ├── init.py # Paquete principal
 │ ├── engine.py # Reglas deductivas (pyDatalog)
 │ ├── main.py # Orquestador principal
+│ │
 │ └── 📁 loaders/ # Módulo de carga de datos
 │    ├── init.py
 │    ├── csv_loader.py # Lector CSV

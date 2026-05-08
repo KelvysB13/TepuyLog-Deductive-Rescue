@@ -1,6 +1,6 @@
-# ============================================
-# OPERACIÓN TEPUY-LOG - LENGUAJES DEL PROYECTO
-# ============================================
+#-----------------------------------------------------
+#----- Operación TepuyLog - Lenguajes Utilizados -----
+#-----------------------------------------------------
 
 # Python
 *.py linguist-language=Python
@@ -18,9 +18,9 @@
 *.csv linguist-language=CSV
 *.csv linguist-detectable=true
 
-# ============================================
-# EXCLUIR ARCHIVOS QUE NO SON CÓDIGO
-# ============================================
+#---------------------------------------------
+#----- Excluir Archivo que no son Código -----
+#---------------------------------------------
 
 # Videos e imágenes
 *.mp4 linguist-generated=true
@@ -43,19 +43,18 @@ LICENSE linguist-documentation=true
 .idea/* linguist-vendored=true
 *.code-workspace linguist-vendored=true
 
-# ============================================
-# FORZAR CONTEO DE ARCHIVOS PEQUEÑOS
-# ============================================
+#----------------------------------------------
+#----- Forzar Conteo de Archivos Pequeños -----
+#----------------------------------------------
 
-# Asegurar que todos los archivos de código sean contados
 *.py linguist-vendored=false
 *.sql linguist-vendored=false
 *.json linguist-vendored=false
 *.csv linguist-vendored=false
 
-# ============================================
-# OVERSAMPLING PARA CORREGIR PORCENTAJES
-# ============================================
+#------------------------
+#----- Oversampling -----
+#------------------------
 
 # Los archivos de datos y lógica deben tener peso normal
 data/*.csv linguist-language=CSV

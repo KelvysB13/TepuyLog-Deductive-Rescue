@@ -24,4 +24,4 @@ __all__ = [
     'loaders'
 ]
 
-print("[src] - Paquete TepuyLog inicializado correctamente")
+#print("[src] - Paquete TepuyLog inicializado correctamente")

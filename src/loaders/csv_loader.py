@@ -17,4 +17,4 @@ def load_roads_from_csv(filepath: str):
             + conexion('{row['origen']}', '{row['destino']}', {float(row['distancia_km'])}, '{row['tipo_sendero']}')
             """)
 
-    print(f"[CSV] - Rutas cargadas desde {filepath}")
+    print(f"[CSV] - Rutas cargadas...")

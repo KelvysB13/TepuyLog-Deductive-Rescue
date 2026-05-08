@@ -35,10 +35,11 @@ def load_personal_info():
     conn.close()
     
     print("\n[PostgreSQL] - Personal atrapado:")
+    print(" ")
 
     for p in atrapados:
         
-        print(f"  - {p[0]} ({p[1]}) en {p[2]}")
+        print(f"    - {p[0]} ({p[1]}) en {p[2]}")
     
     return atrapados
 
@@ -64,4 +65,5 @@ def registrar_bitacora(ruta_encontrada, origen, destino):
     cur.close()
     conn.close()
 
-    print("[PostgreSQL] - Evento registrado en bitácora")
+    print(" ")
+    print("[PostgreSQL] - Evento registrado en bitácora.")

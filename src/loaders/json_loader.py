@@ -17,5 +17,5 @@ def load_weather_from_json(filepath: str):
         + inundado('{origen}', '{destino}')
         """)
     
-    print(f"[JSON] Cargadas {len(data['alertas']['rutas_cerradas_por_crecida'])} rutas bloqueadas")
+    print(f"[JSON] - Se encontraron {len(data['alertas']['rutas_cerradas_por_crecida'])} rutas bloqueadas...")
     return data['timestamp']

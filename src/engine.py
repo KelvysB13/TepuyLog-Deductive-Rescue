@@ -22,7 +22,7 @@ def setup_rules():
 #----- Función para Verificar si existe ruta segura -----
 #--------------------------------------------------------
 
-def verificar_acceso(origen, destino):
+def verificar_acceso(origen, destino, imprimir=True):
 
     try:
 
@@ -30,18 +30,17 @@ def verificar_acceso(origen, destino):
 
         consulta = f"acceso('{origen}', '{destino}')"
         resultados = pyDatalog.ask(consulta)
-        
-        if resultados:
-            print(f"\n✅ Ruta segura encontrada: {origen} -> {destino}")
-            return True
-        
-        else:
-            print(f"\n❌ No hay ruta segura: {origen} -> {destino}")
-            return False
+    
+        if resultados and imprimir:
+            print(f"✅ Ruta segura encontrada: {origen} → {destino}")
+
+        elif not resultados and imprimir:
+            print(f"❌ No hay ruta segura: {origen} → {destino}")
+
+        return bool(resultados)
         
     except Exception as e:
-            
-        print(f"\n⚠️ Error en consulta: {e}")
+        print(f"⚠️ Error en consulta: {e}")
         return False
     
 #----------------------------------------------
@@ -50,8 +49,7 @@ def verificar_acceso(origen, destino):
 
 def obtener_ruta_completa(origen, destino):
 
-    if verificar_acceso(origen, destino):
-
+    if verificar_acceso(origen, destino, imprimir=False):
         return [origen, destino]
     
     return None
