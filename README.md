@@ -72,6 +72,8 @@ TepuyLog-Deductive-Rescue/
 │ └── 📁 images/ # Imagenes
 │    └── 📸 TepuyLog-Banner.png
 │
+├── 📁 logs/ # Archivos generados de una misión
+│
 ├── 📁 sql/ # Esquemas de base de datos
 │ └── 📄 schema.sql # Tablas y datos iniciales
 │
