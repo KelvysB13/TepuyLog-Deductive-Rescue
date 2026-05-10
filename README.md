@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Banner](./docs/images/TepuyLog-Banner.png)
+[![Banner](./docs/images/TepuyLog-Banner.png)](https://www.youtube.com/watch?v=SGSv0xatVSg)
 
 <a href="https://www.python.org/downloads/release/python-3144/">
     <img src="https://img.shields.io/badge/Python-3.14.4-blue?logo=python" alt="Python 3.14.4">
@@ -70,7 +70,9 @@ TepuyLog-Deductive-Rescue/
 │ ├── Planteamiento del Problema.pdf
 │ │
 │ └── 📁 images/ # Imagenes
-│    └── 📸 TepuyLog-Banner.png
+│    ├── 📸 TepuyLog-Banner.png
+│    ├── 📸 TepuyLog-MenúInteractivo.png
+│    └── 📸 TepuyLog-SistemaGrafo.png
 │
 ├── 📁 logs/ # Archivos generados de una misión
 │
