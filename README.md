@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Banner](./docs/images/TepuyLog-Banner.png)(https://www.youtube.com/watch?v=SGSv0xatVSg)
+![Banner](./docs/images/TepuyLog-Banner.png)[https://www.youtube.com/watch?v=SGSv0xatVSg]
 
 <a href="https://www.python.org/downloads/release/python-3144/">
     <img src="https://img.shields.io/badge/Python-3.14.4-blue?logo=python" alt="Python 3.14.4">
